@@ -60,11 +60,13 @@ public class MenuPanel : MonoBehaviour
 
     private void RandomRoomButtonClick()
     {
+        // ·£´ý Âü°¡
         RoomOptions option = new()
         {
             MaxPlayers = 10,
         };
-        PhotonNetwork.JoinRandomOrCreateRoom(roomOptions: option);
+        string roomName = $"Random Room {Random.Range(100,1000)}";
+        PhotonNetwork.JoinRandomOrCreateRoom(roomOptions: option, roomName: roomName);
     }
 
     private void LogoutButtonClick()

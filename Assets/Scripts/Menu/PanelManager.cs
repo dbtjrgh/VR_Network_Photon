@@ -66,6 +66,7 @@ public class PanelManager : MonoBehaviourPunCallbacks
 
     public override void OnConnected()
     {
+        print("메인메뉴에 입장함.");
         PanelOpen("Menu");
     }
 
@@ -77,26 +78,31 @@ public class PanelManager : MonoBehaviourPunCallbacks
 
     public override void OnJoinedLobby()
     {
+        print("로비에 입장함.");
         PanelOpen("Lobby");
     }
 
     public override void OnLeftLobby()
     {
+        print("메인메뉴에 입장함.");
         PanelOpen("Menu");
     }
 
     public override void OnJoinedRoom()
     {
+        print("룸에 입장함.");
         PanelOpen("Room");
     }
 
     public override void OnCreatedRoom()
     {
+        print("룸에 입장함.");
         PanelOpen("Room");
     }
 
     public override void OnLeftRoom()
     {
+        print("메인메뉴에 입장함.");
         PanelOpen("Menu");
     }
 
