@@ -29,7 +29,7 @@ public class Bomb : MonoBehaviour
         particle.Play();
 
         // 오브젝트 풀링 추천
-        Destroy(particle, 3f);
+        Destroy(particle.gameObject, 3f);
 
         GetComponent<Renderer>().enabled = false;
         GetComponent<Collider>().enabled = false;

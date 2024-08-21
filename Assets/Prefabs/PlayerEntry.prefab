@@ -777,11 +777,11 @@ GameObject:
   m_Component:
   - component: {fileID: 5934883807912630294}
   - component: {fileID: 5934883807912630292}
-  - component: {fileID: 2475855979936437685}
   - component: {fileID: 5934883807912630295}
   - component: {fileID: 5934883807912630293}
   - component: {fileID: 5934883807912630299}
   - component: {fileID: 5934883807912630298}
+  - component: {fileID: 8124574815505562221}
   m_Layer: 5
   m_Name: PlayerEntry
   m_TagString: Untagged
@@ -820,21 +820,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5934883807912630289}
   m_CullTransparentMesh: 1
---- !u!114 &2475855979936437685
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5934883807912630289}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3900a30d291a13040a8c1099e9997c4a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  characterSelectToggleGroup: {fileID: 8593137688749532807}
-  playerNameText: {fileID: 5934883807912630295}
-  readyToggle: {fileID: 7246862469235471719}
 --- !u!114 &5934883807912630295
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -914,6 +899,21 @@ MonoBehaviour:
   m_EffectColor: {r: 0, g: 0, b: 0, a: 1}
   m_EffectDistance: {x: 1, y: -1}
   m_UseGraphicAlpha: 1
+--- !u!114 &8124574815505562221
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5934883807912630289}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cba78b06fea793c47a7a74985a4754d5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  playerNameText: {fileID: 5934883807912630295}
+  readyToggle: {fileID: 7246862469235471719}
+  readyLabel: {fileID: 8391740080164516554}
 --- !u!1 &6045742460188418439
 GameObject:
   m_ObjectHideFlags: 0

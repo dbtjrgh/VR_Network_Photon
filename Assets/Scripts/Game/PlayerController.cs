@@ -35,6 +35,8 @@ public class PlayerController : MonoBehaviourPun,IPunObservable
     public Text hpText;
     public Text shotText;
 
+    public GameObject[] eyes;
+
 
     #endregion
 
@@ -101,6 +103,8 @@ public class PlayerController : MonoBehaviourPun,IPunObservable
     // Bomb에 PhotonView가 붙을 경우 불필요한 패킷이 교환되는 비효율이 발생하므로,
     // 특정 클라이언트가 Fire를 호출할 경우 다른 클라이언트에게
     // RPC를 통해 똑같이 Fire를 호출하도록 하고싶음.
+    // 추측 항법(Dead Reckoning) 알고리즘을 활용하기 위해 투사체는 각 클라이언트에서 생성하도록
+    // Remote Procedure Call을 함.
     [PunRPC]
     private void Fire(Vector3 shotPoint, Vector3 shotDirection, PhotonMessageInfo info)
     {
@@ -110,6 +114,8 @@ public class PlayerController : MonoBehaviourPun,IPunObservable
         print($"local time : {PhotonNetwork.Time}");
         print($"server time : {info.SentServerTime}");
 
+
+        // 지연 보상
         //                       1:35:20.5          1:35:20.3       0.2초의 지연이 있을 경우
         float lag = (float)(PhotonNetwork.Time - info.SentServerTime);
 
@@ -148,6 +154,7 @@ public class PlayerController : MonoBehaviourPun,IPunObservable
     public void OnPhotonSerializeView(PhotonStream stream, PhotonMessageInfo info)
     {
         // stream을 통해서 hp와 shotCount만 동기화
+        // stream은 queue의 형태.
         // 쓸 때
         if (stream.IsWriting)
         {
