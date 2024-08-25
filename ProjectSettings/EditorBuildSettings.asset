@@ -6,12 +6,9 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/_SeokHo/Scenes/Firebase/FBMainScene.unity
-    guid: 12af3a76784fd6d41bc0eb0c0acf06ff
+    path: Assets/_Project/Scenes/MainScene.unity
+    guid: 6769ea8eaf7c6c9478d8f144e867474c
   - enabled: 1
-    path: Assets/_SeokHo/Scenes/MainScene.unity
-    guid: 86cfcebc0416c54438c7fc2641771ef7
-  - enabled: 1
-    path: Assets/_SeokHo/Scenes/GameScene.unity
-    guid: 719648fc0f44d394d924731299e7b7ce
+    path: Assets/_Project/Scenes/GameScene.unity
+    guid: 80b674c3ba006b64f8b0947b2279c527
   m_configObjects: {}

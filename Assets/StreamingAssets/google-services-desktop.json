@@ -1,22 +1,22 @@
 {
   "project_info": {
-    "project_number": "562465021775",
-    "firebase_url": "https://myfirebasetest-935f3-default-rtdb.firebaseio.com",
-    "project_id": "myfirebasetest-935f3",
-    "storage_bucket": "myfirebasetest-935f3.appspot.com"
+    "project_number": "487412679098",
+    "firebase_url": "https://myfirebasetest-c3ec8-default-rtdb.asia-southeast1.firebasedatabase.app",
+    "project_id": "myfirebasetest-c3ec8",
+    "storage_bucket": "myfirebasetest-c3ec8.appspot.com"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:562465021775:android:c0b874e40fa5b859342f3a",
+        "mobilesdk_app_id": "1:487412679098:android:95827532143d2cb5f79d83",
         "android_client_info": {
-          "package_name": "com.ratulstudent.myfirebasetest"
+          "package_name": "com.cwlStudio.myfirebasetest"
         }
       },
       "oauth_client": [],
       "api_key": [
         {
-          "current_key": "AIzaSyDiuCtFzxNTjV5HiML0IS1doIiOZ-LbDWo"
+          "current_key": "AIzaSyAoUZbGQe-biWFO4hsz3qgJcCHuw_TNnqg"
         }
       ],
       "services": {
